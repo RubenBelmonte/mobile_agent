@@ -157,7 +157,6 @@ public class Client {
                 DatagramPacket datagram = new DatagramPacket(buffer,
                         buffer.length, InetAddress.getByName(socketIp), port);
                 mySocket.send(datagram);
-                System.out.println("close enviado a "+socketIp+"|"+port);
             }catch (Exception ex){// the server is close
             }
         }   
